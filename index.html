@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="includes/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <title>fatDev.co - Sign-up</title>
+    
+</head>
+<body>
+    
+    <div>
+        <form action="#" method="post">
+            <div>
+                <label for="firstName">First Name</label>
+            </div>
+            <div>
+                <input type="text" name="firstName" id="firstName">
+            </div>
+            <div>
+                <label for="lastName">Last Name</label>
+            </div>
+            <div>
+                <input type="text" name="lastName" id="lastName">
+            </div>
+            <div>
+                <label for="emailAddress"><span style="color: red;">*</span>Email Address</label>
+            </div>
+            <div><input type="email" name="emailAddress" id="emailAddress" required placeholder="email@mail.com"></div>
+            <div>
+                <label for="password"><span style="color:red;">*</span>Password</label>
+            </div>
+            <div><input type="password" name="password" id="password" required minlength="8" maxlength="15"></div>
+
+            <div><label for="passConfirm"><span style="color:red">*</span>Confirm Password</label></div>
+            <div><input type="password" name="passConfirm" id="passConfirm" required minlength="8" maxlength="15"></div>
+
+            <div><button type="submit">Submit</button></div>
+        </form>
+    </div>
+</body>
+</html>
