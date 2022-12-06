@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 body,html{
     height: 100%;
@@ -9,12 +10,13 @@ body,html{
 background: linear-gradient(185deg, rgba(2,0,36,1) 11%, rgba(121,9,9,1) 20%, rgba(135,48,8,1) 34%, rgba(170,6,129,1) 50%, rgba(165,48,7,1) 74%, rgba(2,0,36,1) 90%);
 color: aliceblue;
 overflow: hidden;
+font-family: 'Merriweather sans';
+
 }
 
 
 .image{
     background-image: url(/includes/mac-portrait.jpg);
-
     /* Full height */
     height: 1000px;
     width: 100%;
@@ -31,9 +33,61 @@ overflow: hidden;
   width: 50%;
 }
 .logo{
-    display: flex;
+    display: absolute;
     flex-flow: row wrap;
-    padding: 15px 0;
-    height: fit-content;
-    width: 500px;
+    padding: 150px 100px;
+    width: 450px;
+    margin: 150px;
+    background-color: rgba(0, 0, 0, 0.353);
+    position: fixed;
+}
+a{
+    font-style: italic;
+    font-weight: 600;
+    
+}
+.credits,a{
+    color: gray;
+    text-decoration: none;
+    font-size: small;
+    flex-flow:wrap row;
+    
+}
+form{
+    display: table;
+}
+.column{
+    padding: 5%;
+}
+p{
+    margin-bottom: 50px;
+}
+.dummy-text{
+    font-size: 1.3rem;
+}
+label{
+    display: grid;
+}
+input{
+    padding: 5px;
+    background-color: transparent;
+    border-color: aliceblue;
+    border-radius: 5px;
+    margin: 10px;
+    display: inline-block;
+}
+
+button{
+    margin: 20px 0 0 10px;
+    padding: 15px;
+    font-size: large;
+    background-color: transparent;
+    color: white;
+    border-width: 3px;
+    border-color: aliceblue;
+    border-radius: 5px;
+}
+button:hover{
+    background-color: aliceblue;
+    color: black;
 }
